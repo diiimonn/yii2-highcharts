@@ -36,9 +36,6 @@ class HighchartsAsset extends AssetBundle
             $this->js[] = "$script.$ext";
         }
 
-        // make sure the highcharts base file is included first
-        array_unshift($this->js, "highcharts.$ext");
-
         return $this;
     }
 }
